@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Victor Hugo | Software Engineer Portfólio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="cursor-glow"></div>
+
+<!-- NAVEGAÇÃO -->
+    <nav>
+      <div class="nav-inner">
+        <div
+          class="code-font"
+          style="color: var(--purple); font-weight: 800; font-size: 1.2rem"
+        >
+          &lt; VH &gt;
+        </div>
+
+        <div class="nav-links">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#tecnologias">Tecnologias</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </div>
+
+        <a href="https://wa.me/5567984293762" class="btn-wa" target="_blank"
+          >Whatsapp</a
+        >
+      </div>
+    </nav>
+
+<!-- INCIO DO SITE -->
+    <header id="inicio">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Disponível para projetos
+      </div>
+
+      <h1><span class="accent">Victor</span><span class="point" color="white">.</span></h1>
+
+      <p>
+        Estudante de Engenharia de Software e Desenvolvedor Full Stack em
+        formação.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projetos" class="btn-primary">
+          Ver Projetos
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+        <a href="https://github.com/Hyperjj" target="_blank" class="btn-ghost">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+            />
+          </svg>
+          GitHub
+        </a>
+      </div>
+
+      <!-- SCROLL INDICATOR -->
+      <a href="#sobre" class="scroll-indicator" aria-label="Rolar para baixo">
+        <div class="scroll-mouse"></div>
+        <span>Scroll</span>
+      </a>
+    </header>
+
+         <!-- SOBRE MIM -->
+    <section id="sobre">
+      <div class="section-inner">
+        <h2 class="section-title reveal">
+          <span style="display: inline-flex; align-items: center; gap: 12px">
+            <span style="font-size: 1.6rem">👤</span> Sobre Mim
+          </span>
+        </h2>
+        <div class="sobre-grid">
+          <div class="sobre-text reveal" style="transition-delay: 0.1s">
+            <p>
+              Meu nome é <strong>Victor Hugo</strong>, tenho 21 anos e atualmente curso
+              <strong>Engenharia de Software</strong>.
+            </p>
+            <p>
+              Atualmente estudo tecnologias como <strong>JavaScript</strong>, <strong>TypeScript</strong> e
+              <strong>Node.js</strong>, buscando evoluir cada vez mais tanto no <strong>front-end</strong> quanto
+              no <strong>back-end</strong>.
+            </p>
+          </div>
+          <div
+            class="reveal"
+            style="position: relative; transition-delay: 0.2s"
+          >
+            <div class="photo-frame glass-card">
+              <div class="photo-placeholder">
+                <img
+                  src="./img/WhatsApp Image 2026-05-15 at 12.06.02.jpeg"
+                  alt="Foto de perfil"
+                  onerror="
+                    this.style.display = 'none';
+                    this.parentElement.innerHTML +=
+                      '<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'rgba(168,85,247,0.4)\' stroke-width=\'1\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><path d=\'M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2\'/><circle cx=\'12\' cy=\'7\' r=\'4\'/></svg>';
+                  "
+                />
+              </div>
+            </div>
+            <div class="photo-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section id="tecnologias" 
+    style="background: rgba(255, 255, 255, 0.01)">
+      <div class="section-inner">
+        <h2 class="section-title center reveal">Linguagens</h2>
+
+        <div class="tech-grid reveal" style="transition-delay: 0.1s">
+
+          <!-- JAVASCRIPT -->
+          <div class="tech-card glass-card">
+            <div
+              class="tech-icon"
+              style="background: rgba(234, 179, 8, 0.12); color: #eab308"
+            >
+              JS
+            </div>
+            <span class="tech-name">JavaScript (Básico)</span>
+          </div>
+
+          <!-- TYPESCRIPT -->
+          <div class="tech-card glass-card">
+            <div
+              class="tech-icon"
+              style="background: rgba(168, 85, 247, 0.12); color: #a855f7"
+            >
+              TS
+            </div>
+            <span class="tech-name">TypeScript (Básico)</span>
+          </div>
+
+          <!-- NODE -->
+          <div class="tech-card glass-card">
+            <div
+              class="tech-icon"
+              style="background: rgba(34, 197, 94, 0.12); color: #22c55e"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+                <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+                <line x1="6" x2="6.01" y1="6" y2="6" />
+                <line x1="6" x2="6.01" y1="18" y2="18" />
+              </svg>
+            </div>
+            <span class="tech-name">Node.js (Básico)</span>
+          </div>
+
+          <!-- CSS -->
+          <div class="tech-card glass-card">
+            <div
+              class="tech-icon"
+              style="background: rgba(14, 165, 233, 0.12); color: rgb(0, 162, 255)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+            </div>
+            <span class="tech-name">CSS (Básico)
+            </span>
+          </div>
+
+          <!-- HTML -->
+          <div class="tech-card glass-card">
+            <div
+              class="tech-icon"
+              style="background: rgba(249, 115, 22, 0.12); color: #f73a00"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="26"
+                height="26"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
+                <line x1="12" x2="12" y1="22" y2="15.5" />
+                <polyline points="22 8.5 12 15.5 2 8.5" />
+              </svg>
+            </div>
+            <span class="tech-name">HTML (Intermediário)</span>
+        </div>
+      </div>
+    </section>
+
+<!-- PROJETOS -->
+    <section id="projetos">
+      <div class="section-inner">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 56px;
+          "
+          class="reveal"
+        >
+          <div>
+            <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 8px">
+              Projetos em Destaque
+            </h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem">
+              Alguns dos trabalhos que desenvolvi.
+            </p>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- PROJETO 1 -->
+          <div
+            class="project-card glass-card reveal"
+            style="transition-delay: 0.05s"
+          >
+            <div class="project-thumb">
+              <img src="./projetos/Psicologa.png" alt="">
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span
+                  class="tag"
+                  style="background: rgba(247, 85, 85, 0.12); color: #f73a00"
+                  >HTML</span
+                >
+                <span
+                  class="tag"
+                  style="background: rgba(68, 85, 239, 0.12); color: rgb(0, 162, 255)"
+                  >CSS</span
+                >
+                <span
+                  class="tag"
+                  style="background: rgba(228, 239, 68, 0.12); color: #eab308"
+                  >JS</span
+                >
+              </div>
+              <h3 class="project-title">Landing Page - Psicóloga</h3>
+              <p class="project-desc">
+                Landing page profissional desenvolvida para uma psicóloga, com apresentação dos serviços, áreas de atuação, depoimentos e formulário de contato para agendamento de consultas.
+              </p>
+              <div class="project-links">
+                  </svg>
+                </a>
+                <a
+                href="https://wa.me/5567984293762?text=Olá%20Victor!%20Gostaria%20de%20saber%20mais%20sobre%20o%20projeto%20Landing%20Page%20-%20Psicóloga."
+                target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                    />
+                    <path
+                      d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                    />
+                  </svg>
+                  Saiba mais!
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJETO 2 -->
+          <div
+            class="project-card glass-card reveal"
+            style="transition-delay: 0.05s"
+          >
+            <div class="project-thumb">
+              <img src="./projetos/Academia.png" alt="">
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span
+                  class="tag"
+                  style="background: rgba(247, 85, 85, 0.12); color: #f73a00"
+                  >HTML</span
+                >
+                <span
+                  class="tag"
+                  style="background: rgba(68, 85, 239, 0.12); color: rgb(0, 162, 255)"
+                  >CSS</span
+                >
+                <span
+                  class="tag"
+                  style="background: rgba(228, 239, 68, 0.12); color: #eab308"
+                  >JS</span
+                >
+              </div>
+              <h3 class="project-title">Landing Page - Academia</h3>
+              <p class="project-desc">
+                Site institucional para academia, contendo informações sobre planos, modalidades, estrutura, horários e botão de contato via WhatsApp para novos alunos.
+              </p>
+              <div class="project-links">
+                  </svg>
+                </a>
+                <a
+                href="https://wa.me/5567984293762?text=Olá%20Victor!%20Gostaria%20de%20saber%20mais%20sobre%20o%20projeto%20Landing%20Page%20-%20Academia."
+                target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                    />
+                    <path
+                      d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                    />
+                  </svg>
+                  Saiba mais!
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJETO 3 -->
+          <div
+            class="project-card glass-card reveal"
+            style="transition-delay: 0.05s"
+          >
+            <div class="project-thumb">
+              <img src="./projetos/Gas.png" alt="">
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span
+                  class="tag"
+                  style="background: rgba(247, 85, 85, 0.12); color: #f73a00"
+                  >HTML</span
+                >
+                <span
+                  class="tag"
+                  style="background: rgba(68, 85, 239, 0.12); color: rgb(0, 162, 255)"
+                  >CSS</span
+                >
+                <span
+                  class="tag"
+                  style="background: rgba(228, 239, 68, 0.12); color: #eab308"
+                  >JS</span
+                >
+              </div>
+              <h3 class="project-title">Landing Page - Distribuidora de Gás</h3>
+              <p class="project-desc">
+                Website desenvolvido para distribuidora de gás e água mineral, com catálogo de produtos, botão de pedido rápido pelo WhatsApp e destaque para entrega ágil.
+              </p>
+              <div class="project-links">
+                  </svg>
+                </a>
+                <a
+                href="https://wa.me/5567984293762?text=Olá%20Victor!%20Gostaria%20de%20saber%20mais%20sobre%20o%20projeto%20Landing%20Page%20-%20Distribuidora%20de%20Gás."
+                target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                    />
+                    <path
+                      d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                    />
+                  </svg>
+                  Saiba mais!
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJETO 4 -->
+          <div
+            class="project-card glass-card reveal"
+            style="transition-delay: 0.05s"
+          >
+            <div class="project-thumb">
+              <img src="./projetos/Oficina.png" alt="">
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span
+                  class="tag"
+                  style="background: rgba(247, 85, 85, 0.12); color: #f73a00"
+                  >HTML</span
+                >
+                <span
+                  class="tag"
+                  style="background: rgba(68, 85, 239, 0.12); color: rgb(0, 162, 255)"
+                  >CSS</span
+                >
+                <span
+                  class="tag"
+                  style="background: rgba(228, 239, 68, 0.12); color: #eab308"
+                  >JS</span
+                >
+              </div>
+              <h3 class="project-title">Landing Page - Oficina Automotiva</h3>
+              <p class="project-desc">
+                Site para oficina mecânica com apresentação dos serviços oferecidos, diferenciais da empresa, depoimentos de clientes e formulário para solicitação de orçamento.
+              </p>
+              <div class="project-links">
+                  </svg>
+                </a>
+                <a
+                href="https://wa.me/5567984293762?text=Olá%20Victor!%20Gostaria%20de%20saber%20mais%20sobre%20o%20projeto%20Landing%20Page%20-%20Oficina%20Automotiva."
+                target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                    />
+                    <path
+                      d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                    />
+                  </svg>
+                  Saiba mais!
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJETO 5 -->
+          <div
+            class="project-card glass-card reveal"
+            style="transition-delay: 0.05s"
+          >
+            <div class="project-thumb">
+              <img src="./projetos/Restaurante.png" alt="">
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span
+                  class="tag"
+                  style="background: rgba(247, 85, 85, 0.12); color: #f73a00"
+                  >HTML</span
+                >
+                <span
+                  class="tag"
+                  style="background: rgba(68, 85, 239, 0.12); color: rgb(0, 162, 255)"
+                  >CSS</span
+                >
+                <span
+                  class="tag"
+                  style="background: rgba(228, 239, 68, 0.12); color: #eab308"
+                  >JS</span
+                >
+              </div>
+              <h3 class="project-title">Landing Page - Restaurante</h3>
+              <p class="project-desc">
+                Site moderno para restaurante, com cardápio digital, galeria de fotos, informações de localização e integração com WhatsApp para reservas e pedidos.
+              </p>
+              <div class="project-links">
+                  </svg>
+                </a>
+                <a
+                href="https://wa.me/5567984293762?text=Olá%20Victor!%20Gostaria%20de%20saber%20mais%20sobre%20o%20projeto%20Landing%20Page%20-%20Restaurante."
+                target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                    />
+                    <path
+                      d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                    />
+                  </svg>
+                  Saiba mais!
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PROJETO 6 -->
+          <div
+            class="project-card glass-card reveal"
+            style="transition-delay: 0.05s"
+          >
+            <div class="project-thumb">
+              <img src="./projetos/Esfihas.png" alt="">
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span
+                  class="tag"
+                  style="background: rgba(247, 85, 85, 0.12); color: #f73a00"
+                  >HTML</span
+                >
+                <span
+                  class="tag"
+                  style="background: rgba(68, 85, 239, 0.12); color: rgb(0, 162, 255)"
+                  >CSS</span
+                >
+                <span
+                  class="tag"
+                  style="background: rgba(228, 239, 68, 0.12); color: #eab308"
+                  >JS</span
+                >
+              </div>
+              <h3 class="project-title">Landing Page - Esfiharia</h3>
+              <p class="project-desc">
+                Landing page para esfiharia com destaque para sabores, promoções e botão direto para pedidos via WhatsApp.
+              </p>
+              <div class="project-links">
+                  </svg>
+                </a>
+                <a
+                href="https://wa.me/5567984293762?text=Olá%20Victor!%20Gostaria%20de%20saber%20mais%20sobre%20o%20projeto%20Landing%20Page%20-%20Esfiharia."
+                target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="15"
+                    height="15"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                    />
+                    <path
+                      d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                    />
+                  </svg>
+                  Saiba mais!
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- FIM projects-grid -->
+      </div>
+    </section>
+
+<!-- CONTATO -->
+    <section id="contato">
+      <div class="section-inner">
+        <h2
+          class="reveal"
+          style="
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 16px;
+            text-align: center;
+          "
+        >
+          Vamos conversar?
+        </h2>
+        <p
+          class="reveal"
+          style="
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            max-width: 480px;
+            margin: 0 auto 48px;
+            line-height: 1.7;
+            text-align: center;
+            transition-delay: 0.1s;
+          "
+        >
+          Sinta-se à vontade para entrar em contato!
+        </p>
+
+        <div class="contact-icons reveal" style="transition-delay: 0.2s">
+          <a
+            href="mailto:vitor13gamor@gmail.com"
+            class="contact-icon-item purple"
+          >
+            <div class="contact-icon-circle glass-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </div>
+            <span class="contact-label">E-mail</span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/victor-hugoc/"
+            target="_blank"
+            class="contact-icon-item blue"
+          >
+            <div class="contact-icon-circle glass-card">
+              <img
+                src="./linkedin.png"
+                alt="LinkedIn"
+                onerror="
+                  this.outerHTML =
+                    '<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'22\' height=\'22\' viewBox=\'0 0 24 24\' fill=\'currentColor\'><path d=\'M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z\'/><rect width=\'4\' height=\'12\' x=\'2\' y=\'9\'/><circle cx=\'4\' cy=\'4\' r=\'2\'/></svg>'
+                "
+              />
+            </div>
+            <span class="contact-label">LinkedIn</span>
+          </a>
+
+          <a
+            href="https://wa.me/5567984293762"
+            target="_blank"
+            class="contact-icon-item green"
+          >
+            <div class="contact-icon-circle glass-card">
+              <img
+                src="./redes/whatsapp.png"
+                alt="WhatsApp"
+                onerror="this.style.display = 'none'"
+              />
+            </div>
+            <span class="contact-label">WhatsApp</span>
+          </a>
+
+          <a
+            href="https://www.instagram.com/vhmarkweb/"
+            target="_blank"
+            class="contact-icon-item pink"
+          >
+            <div class="contact-icon-circle glass-card">
+              <img
+                src="./redes/insta.webp"
+                alt="Instagram"
+                onerror="this.style.display = 'none'"
+              />
+            </div>
+            <span class="contact-label">Instagram</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+<!-- RODAPE -->
+    <footer>
+      <p>© 2026 Victor. Todos os direitos reservados.</p>
+      <p class="footer-code">ENGINEERING_SOFTWARE_STAGING_v1.0</p>
+    </footer>
+
+    <script src="./main.js"></script>
+
+  </body>
+</html>
